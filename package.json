@@ -1,7 +1,17 @@
 {
+  "name": "asci-api",
+  "version": "1.0.0",
+  "description": "API untuk mengkonversi gambar menjadi ASCII",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "canvas": "^2.11.2",
     "express": "^4.21.1",
-    "multer": "^1.4.5-lts.1"
-  }
+    "multer": "^1.4.5-lts.1",
+    "fs": "^0.0.1-security"
+  },
+  "author": "AutoFtbot",
+  "license": "ISC"
 }
