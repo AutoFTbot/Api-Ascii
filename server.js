@@ -3,7 +3,7 @@ const multer = require('multer');
 const { createCanvas, loadImage } = require('canvas');
 const fs = require('fs');
 const app = express();
-const port = 3000;
+const port = 80;
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
