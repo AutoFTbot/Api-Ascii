@@ -83,7 +83,7 @@ app.post('/asci', upload.single('image'), async (req, res) => {
     try {
         const image = await loadImage(req.file.path);
         const ascii = convertToBrailleASCII(image);
-        deleteFile(req.file.path); // Hapus file setelah diproses
+        deleteFile(req.file.path);
         res.send(`${ascii}`);
     } catch (error) {
         console.error(error);
